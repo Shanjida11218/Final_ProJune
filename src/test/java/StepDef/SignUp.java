@@ -4,8 +4,10 @@ import Base.config;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 
 public class SignUp extends config {
+
     @And("customer enter their email")
     public void customerEnterTheirEmail() {
         driver.findElement(By.xpath("//*[@id=\"sc-longRegistrationFormDefinition_email\"]")).sendKeys("xyz@gmail.com");
